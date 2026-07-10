@@ -1,13 +1,9 @@
 function App() {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-slate-950 text-white">
-      <h1 className="text-5xl font-bold mb-4">
+    <div className="min-h-screen bg-slate-950 text-white flex items-center justify-center">
+      <h1 className="text-5xl font-bold">
         🚀 Space Mission Control
       </h1>
-
-      <p className="text-slate-400 text-xl">
-        Mission Control Dashboard Coming Soon...
-      </p>
     </div>
   );
 }
