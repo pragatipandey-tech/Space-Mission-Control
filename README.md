@@ -12,7 +12,7 @@ A modern full-stack Mission Control dashboard featuring live rocket launches, sa
 - React Three Fiber
 - Three.js
 
-## Project Status:
+## Project Status:-
 
 🚧 Initial project setup in progress.
 <<<<<<< HEAD
