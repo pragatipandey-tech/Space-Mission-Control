@@ -1,13 +1,10 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 export default function Sidebar() {
-  const [activeItem, setActiveItem] = useState("Dashboard");
-
   const menuItems = [
     { name: "Dashboard", icon: "🏠", path: "/" },
     { name: "Launches", icon: "🚀", path: "/launches" },
-    { name: "Satellites", icon: "🛰", path: "/satellites" },
+    { name: "Satellites", icon: "🛰️", path: "/satellites" },
     { name: "Earth", icon: "🌍", path: "/earth" },
     { name: "Planets", icon: "🪐", path: "/planets" },
     { name: "News", icon: "📰", path: "/news" },
@@ -16,30 +13,27 @@ export default function Sidebar() {
   ];
 
   return (
-    <aside className="w-64 min-h-screen bg-slate-900 border-r border-slate-700 text-white p-5">
-
-      <h2 className="text-sm uppercase text-slate-400 mb-4">
+    <aside className="hidden min-h-[calc(100vh-73px)] w-64 shrink-0 border-r border-slate-700 bg-slate-900 p-5 md:block">
+      <h2 className="mb-4 text-sm uppercase tracking-wider text-slate-400">
         Navigation
       </h2>
 
-      <div className="space-y-2">
+      <nav className="space-y-2">
         {menuItems.map((item) => (
-          <Link
-            key={item.name}
+          <NavLink
+            key={item.path}
             to={item.path}
-            onClick={() => setActiveItem(item.name)}
-            className={`flex items-center gap-3 px-4 py-3 rounded-lg transition-all duration-300 ${
-              activeItem === item.name
-                ? "bg-blue-600 text-white"
-                : "hover:bg-slate-800"
-            }`}
+            className={({ isActive }) =>
+              isActive
+                ? "flex items-center gap-3 rounded-lg bg-blue-600 px-4 py-3 text-white"
+                : "flex items-center gap-3 rounded-lg px-4 py-3 text-slate-300 hover:bg-slate-800 hover:text-white"
+            }
           >
-            <span>{item.icon}</span>
+            <span className="text-lg">{item.icon}</span>
             <span>{item.name}</span>
-          </Link>
+          </NavLink>
         ))}
-      </div>
-
+      </nav>
     </aside>
   );
 }
