@@ -1,29 +1,59 @@
-export default function Dashboard() {
-  const cards = [
-    "🚀 Upcoming Launches",
-    "🛰 Satellite Tracker",
-    "🌍 Earth Viewer",
-    "📰 Space News",
-    "🤖 AI Assistant",
-    "📈 Analytics",
-  ];
+import DashboardCard from "../components/dashboard/DashboardCard";
 
+export default function Dashboard() {
   return (
-    <main className="flex-1 bg-slate-950 p-8">
-      <h1 className="text-4xl font-bold text-white mb-8">
+    <div>
+      <h1 className="text-3xl font-bold">
         Mission Control Dashboard
       </h1>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
-        {cards.map((card) => (
-          <div
-            key={card}
-            className="rounded-xl border border-slate-700 bg-slate-900 p-6 hover:border-blue-500 hover:shadow-lg transition-all duration-300"
-          >
-            <h2 className="text-xl font-semibold text-white">{card}</h2>
-          </div>
-        ))}
+      <p className="mt-2 text-slate-400">
+        Monitor space missions and orbital activities.
+      </p>
+
+      <div className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3">
+        <DashboardCard
+          icon="🚀"
+          title="Upcoming Launches"
+          value="12"
+          description="Scheduled missions"
+        />
+
+        <DashboardCard
+          icon="🛰️"
+          title="Active Satellites"
+          value="8,465"
+          description="Currently tracked"
+        />
+
+        <DashboardCard
+          icon="🌍"
+          title="Earth Monitoring"
+          value="Online"
+          description="Global observation active"
+        />
+
+        <DashboardCard
+          icon="📰"
+          title="Space News"
+          value="24"
+          description="Latest updates"
+        />
+
+        <DashboardCard
+          icon="🤖"
+          title="AI Assistant"
+          value="Online"
+          description="Ready to help"
+        />
+
+        <DashboardCard
+          icon="📈"
+          title="System Health"
+          value="99.8%"
+          description="All systems operational"
+        />
       </div>
-    </main>
+    </div>
   );
 }
