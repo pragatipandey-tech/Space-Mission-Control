@@ -23,11 +23,7 @@ export default function Sidebar() {
           <NavLink
             key={item.path}
             to={item.path}
-            className={({ isActive }) =>
-              isActive
-                ? "flex items-center gap-3 rounded-lg bg-blue-600 px-4 py-3 text-white"
-                : "flex items-center gap-3 rounded-lg px-4 py-3 text-slate-300 hover:bg-slate-800 hover:text-white"
-            }
+            className="flex items-center gap-3 rounded-lg px-4 py-3 text-slate-300 transition-all duration-300 hover:bg-slate-800 hover:text-white"
           >
             <span className="text-lg">{item.icon}</span>
             <span>{item.name}</span>
