@@ -54,6 +54,46 @@ export default function Dashboard() {
           description="All systems operational"
         />
       </div>
+
+      <div className="mt-10">
+        <h2 className="text-xl font-semibold">
+          Mission Control Overview
+        </h2>
+
+        <div className="mt-4 rounded-xl border border-slate-700 bg-slate-900 p-6">
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
+            <div>
+              <p className="text-sm text-slate-400">
+                Successful Missions
+              </p>
+
+              <p className="mt-2 text-2xl font-bold">
+                98.4%
+              </p>
+            </div>
+
+            <div>
+              <p className="text-sm text-slate-400">
+                Active Space Agencies
+             </p>
+
+             <p className="mt-2 text-2xl font-bold">
+               24
+              </p>
+           </div>
+
+           <div>
+              <p className="text-sm text-slate-400">
+                Missions This Year
+             </p>
+
+             <p className="mt-2 text-2xl font-bold">
+                184
+             </p>
+           </div>
+         </div>
+       </div>
+     </div>
     </div>
   );
 }
