@@ -7,13 +7,13 @@ function App() {
     <div className="min-h-screen bg-slate-950 text-white">
       <Navbar />
 
-      <div className="flex">
-        <Sidebar />
+      <div className="flex min-h-[calc(100vh-73px)]">
+       <Sidebar />
 
-        <main className="flex-1 p-6">
-          <AppRoutes />
-        </main>
-      </div>
+       <main className="min-w-0 flex-1 overflow-x-hidden p-4 md:p-6 lg:p-8">
+         <AppRoutes />
+       </main>
+     </div>
     </div>
   );
 }
