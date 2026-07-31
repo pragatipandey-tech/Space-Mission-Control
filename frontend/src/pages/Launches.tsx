@@ -1,3 +1,12 @@
+import PageHeader from "../components/common/PageHeader";
+
 export default function Launches() {
-  return <h1>Launches</h1>;
+  return (
+    <div>
+      <PageHeader
+        title="Launches"
+        description="Track upcoming and recent rocket launches."
+      />
+    </div>
+  );
 }
