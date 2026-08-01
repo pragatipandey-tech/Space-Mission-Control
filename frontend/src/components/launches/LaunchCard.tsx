@@ -11,6 +11,14 @@ export default function LaunchCard({
   date,
   status,
 }: LaunchCardProps) {
+
+  const statusColor =
+    status === "Ready"
+      ? "bg-green-600"
+      : status === "Preparing"
+      ? "bg-yellow-500"
+      : "bg-blue-600";
+
   return (
     <div className="rounded-xl border border-slate-700 bg-slate-900 p-5">
       <h2 className="text-xl font-semibold">
@@ -25,7 +33,7 @@ export default function LaunchCard({
         Launch Date: {date}
       </p>
 
-      <span className="mt-4 inline-block rounded bg-green-600 px-3 py-1 text-sm">
+      <span className={`mt-4 inline-block rounded px-3 py-1 text-sm ${statusColor}`}>
         {status}
       </span>
     </div>
