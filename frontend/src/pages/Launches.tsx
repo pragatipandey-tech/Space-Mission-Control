@@ -9,6 +9,12 @@ export default function Launches() {
         description="Track upcoming and recent rocket launches."
       />
 
+      <input
+        type="text"
+        placeholder="Search missions..."
+        className="mb-6 w-full rounded-lg border border-slate-700 bg-slate-900 p-3 text-white outline-none focus:border-blue-500"
+      />
+
       <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
         <LaunchCard
           mission="Artemis II"
