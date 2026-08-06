@@ -15,7 +15,7 @@ A modern full-stack Mission Control dashboard featuring live rocket launches, sa
 ## Project Status:-
 
 🚧 Initial project setup in progress.
-<<<<<<< HEAD
+<<<<<< HEAD
 - Three.js
 =======
 - Three.js
