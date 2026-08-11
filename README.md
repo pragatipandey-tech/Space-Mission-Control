@@ -149,3 +149,15 @@ Space-Mission-Control/
 │
 ├── README.md
 └── .gitignore
+```
+
+
+👩‍💻 Author
+
+Pragati Pandey
+
+B.Tech Computer Science & Engineering — Data Science
+
+GitHub:
+
+https://github.com/pragatipandey-tech
