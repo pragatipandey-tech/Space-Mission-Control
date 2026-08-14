@@ -10,7 +10,7 @@ The project provides a centralized interface for monitoring rocket launches, sat
 
 Space Mission Control is a space monitoring dashboard designed with a clean and responsive mission-control interface.
 
-The application currently includes:-
+The application currently includes:
 
 - 🚀 Upcoming Rocket Launches
 - 🛰️ Satellite Monitoring
