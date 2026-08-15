@@ -20,7 +20,7 @@ export default function LaunchCard({
       : "bg-blue-600";
 
   return (
-    <div className="rounded-xl border border-slate-700 bg-slate-900 p-5">
+   <div className="rounded-xl border border-slate-700 bg-slate-900 p-5 transition-all duration-300 hover:-translate-y-1 hover:border-blue-500 hover:shadow-lg">
       <h2 className="text-xl font-semibold">
         {mission}
       </h2>
