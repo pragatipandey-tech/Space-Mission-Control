@@ -33,6 +33,16 @@ export default function LaunchCard({
         Launch Date: {date}
       </p>
 
+      <div className="mt-5 rounded-lg bg-slate-800 p-3">
+       <p className="text-sm text-slate-400">
+         Launch Countdown
+       </p>
+
+        <p className="mt-1 text-lg font-semibold text-blue-400">
+         T- 30 Days
+        </p>
+      </div>
+
       <span className={`mt-4 inline-block rounded px-3 py-1 text-sm ${statusColor}`}>
         {status}
       </span>
