@@ -3,6 +3,7 @@ type LaunchCardProps = {
   rocket: string;
   date: string;
   status: string;
+  location: string;
 };
 
 export default function LaunchCard({
@@ -10,6 +11,7 @@ export default function LaunchCard({
   rocket,
   date,
   status,
+  location,
 }: LaunchCardProps) {
 
   const statusColor =
@@ -31,6 +33,10 @@ export default function LaunchCard({
 
       <p className="text-slate-400">
         Launch Date: {date}
+      </p>
+
+      <p className="mt-1 text-slate-400">
+       📍 Launch Site: {location}
       </p>
 
       <div className="mt-5 rounded-lg bg-slate-800 p-3">

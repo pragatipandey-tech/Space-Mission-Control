@@ -24,6 +24,7 @@ export default function Launches() {
            rocket={launch.rocket}
            date={launch.date}
            status={launch.status}
+           location="Kennedy Space Center"
           />
         ))}
       </div>
