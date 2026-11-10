@@ -195,7 +195,7 @@ Suggestions and improvements are welcome.
 
 **Pragati Pandey**
 
-GitHub: [@pragatipandey-tech](https://github.com/pragatipandey-tech)
+GitHub: [@pragatipandey-tech](https://github.com/pragatipandey-tech) 
 
 ---
 
